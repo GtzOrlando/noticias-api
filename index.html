@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <div class="frontPage">
+        <div class="header">
+            <div class="searchBar">
+                <img src="./svgs/magnify.svg" alt="search icon" class="icon">
+                <input type="text" maxlength="70">
+            </div>
+
+            <div class="profileBar">
+                <img src="./svgs/bell-ring-outline.svg" alt="notification icon" class="icon">
+                <a href='https://www.freepik.com/vectors/chef-illustration'>
+                    <span class="tooltiptext">Chef illustration vector created by catalyststuff - www.freepik.com</span>
+                    <img src="./imgs/hamburguer.jpg" alt="profile picture" class="userImage">
+                </a>
+                <div class="userName">Orlando Florida</div>
+            </div>
+
+            <div class="welcomeBar">
+                <a href='https://www.freepik.com/vectors/chef-illustration'>
+                    <span class="tooltiptext">Chef illustration vector created by catalyststuff - www.freepik.com</span>
+                    <img src="./imgs/hamburguer.jpg" alt="profile picture" class="profilePic main">
+                </a>
+                <div class="welcomeMessage">
+                    <div class="greetings">Hola,</div>
+                    <div class="userNameAndTag">Orlando Florida (@GtzOrlando)</div>
+                </div>
+            </div>
+
+            <div class="mainButtons">
+                <button onclick="actualizarCards(NoticiasRandom6(noticias));">Actualizar</button>
+            </div>
+        </div>
+    
+        <div class="mainContent">
+            <div class="noticias">
+                <div class="contentTitle">Últimas noticias</div>
+                <div class="projects">
+                    <div class="card" id="1" onclick="verNoticia(1);">
+                        <div class="cardContent">
+                            <div class="cardTitle"></div>
+                            <div class="cardText"></div>
+                        </div>
+                        <div class="author">
+                            <i></i>
+                        </div> 
+                    </div>
+                    <div class="card" id="2" onclick="verNoticia(2);">
+                        <div class="cardContent">
+                            <div class="cardTitle"></div>
+                            <div class="cardText"></div>
+                        </div>
+                        <div class="author">
+                            <i></i>
+                        </div> 
+                    </div>
+                    <div class="card" id="3" onclick="verNoticia(3);">
+                        <div class="cardContent">
+                            <div class="cardTitle"></div>
+                            <div class="cardText"></div>
+                        </div>
+                        <div class="author">
+                            <i></i>
+                        </div> 
+                    </div>
+                    <div class="card" id="4" onclick="verNoticia(4);">
+                        <div class="cardContent">
+                            <div class="cardTitle"></div>
+                            <div class="cardText"></div>
+                        </div>
+                        <div class="author">
+                            <i></i>
+                        </div> 
+                    </div>
+                    <div class="card" id="5" onclick="verNoticia(5);">
+                        <div class="cardContent">
+                            <div class="cardTitle"></div>
+                            <div class="cardText"></div>
+                        </div>
+                        <div class="author">
+                            <i></i>
+                        </div> 
+                    </div>
+                    <div class="card" id="6" onclick="verNoticia(6);">
+                        <div class="cardContent">
+                            <div class="cardTitle"></div>
+                            <div class="cardText"></div>
+                        </div>
+                        <div class="author">
+                            <i></i>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div id="noticia">
+                <div class="contentTitle"></div>
+                <div class="author"><i></i></div>
+                <div class="content"></div>
+                <div class="sourceLink"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
